@@ -5,6 +5,13 @@ import {Context} from "../../store";
 import React,{useContext, useState} from "react";
 import {LOGOUT} from "../../constants/reducerConstants";
 import logo from "../../public/image/logo.png"
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap.js';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import $ from 'jquery';
+import Popper from 'popper.js';
 
 
 const LoggedOutView = (props) => {
@@ -67,9 +74,11 @@ const LoggedInView = (props) => {
           <Link
             to={`/@${props.currentUser.username}`}
             className="nav-link">
-            {/* <img src={props.currentUser.image} className="user-pic" alt={props.currentUser.username} /> */}
-            {props.currentUser.username}
+            {props.currentUser.username}<i className='fas fa-caret-down' />
           </Link>
+         
+
+
         </li>
         <li className="nav-item">
         <button
@@ -79,7 +88,9 @@ const LoggedInView = (props) => {
               </button>
               </li>
 
+
       </ul>
+      
     );
   }
 
@@ -107,7 +118,7 @@ const Header = () => {
                 {<img className = "logo"src={logo} alt=""/>}
               </Link>
               <Link to="/" className="navbar-brand">
-                second hand market
+                Second Hand Market
                    
               </Link>
 

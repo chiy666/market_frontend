@@ -65,12 +65,14 @@
 .nav-item{
   font-style:normal;
   font-size: large;
+  
 }
-.nav-link{
-  color:antiquewhite;
+.navbar-brand{
+  color:#db3d44 !important;
+ 
 }
 .logo{
-  margin-left: -27%;
+  margin-left: -29%;
   width: 1.1cm;
 }
 .logo2{
@@ -79,6 +81,7 @@
 }
 nav .navbar-nav li a{
   color: white !important;
+  font-size:medium;
   }
   
 .footer {
@@ -96,3 +99,4 @@ nav .navbar-nav li a{
 .home-page{
   margin-bottom:2cm;
 }
+

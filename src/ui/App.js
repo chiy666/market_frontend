@@ -1,6 +1,6 @@
 import '../App.css';
 import Home from "./home/Home";
-import React from "react";
+import React,{useEffect} from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from "./common/Header";
 import Login from "./login/Login";
@@ -15,6 +15,10 @@ import ProductScreen from "./CreatProduct/ProductDetal"
 import CategoryView from "./categoryPage/categoryPg"
 import Footer from './home/Footer';
 function App() {
+    useEffect(() => {
+        document.title = "Second Hand Market"
+        
+     }, []);
     return (
         <div>
             <Router>

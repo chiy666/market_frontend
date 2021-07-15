@@ -4,7 +4,6 @@ import './styles/index.css';
 import App from './ui/App';
 import reportWebVitals from './reportWebVitals';
 import Store from "./store";
-import Footer from "./ui/home/Footer"
 
 ReactDOM.render(
   <React.StrictMode>
